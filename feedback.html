@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>feedback form</title>
+</head>
+<body>
+{%if data%}
+  <p style="color:pink">Thank you for your feedback</p>
+   <form>
+ <input type="button" value="Go back!" onclick="history.go(-2)" >
+</form>
+{%endif%}
+
+
+<h1>give your feedback(describe)</h1>
+<form action="save">
+<textarea id="w3review" name="feedback" rows="17" cols="50"></textarea>
+    <input type="submit">
+</form>
+
+</body>
+</html>

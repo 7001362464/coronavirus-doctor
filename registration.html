@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login page</title>
+    <style>
+		 body{
+		 	background-color:black;
+
+		 }
+		 #d1
+		 {
+		 	background-color:#00cc88;
+		 	width:1000px;
+		 	opacity:0.5;
+		 	margin-left:200px;
+		 	margin-bottom:300px;
+
+
+		 }
+		 #d1:hover
+		 {
+		 	background-color:#41F51D ;
+		 	border:5px solid red;
+
+		 	margin-left:200px;
+		 	margin-bottom:300px;
+
+
+		 }
+
+		 #d1
+		 {
+
+		 	margin-top:200px;
+
+
+		 }
+
+
+	</style>
+</head>
+<body>
+{% if data%}
+<p style="color:green;">Your registration is successfull</p>
+
+<form action="corona/own?" method="get">
+    <input id="your_name" type="text" name="name" value="{{ name }}">
+    <input id="your_name" type="password" name="password" value="{{ password }}">
+    <input type="submit">
+</form>
+{%else%}
+<h1 style="color:white;">Register Yourself:-</h1>
+{%endif%}
+
+
+
+<div id="d1">
+
+<!--name={{name}}&password={{password}}-->
+	<form action="corona/home" method="get">
+      <label id="n">Name(you have to use it as username):<input type="text" placeholder="type your name here" name="name" required></label>
+
+      <p id="n">select your gender:-</p>
+      <label id="n">Male<input type="radio" name="gender" value="M" required ></label>
+        <label id="n">Female<input type="radio" name="gender" value="F" required></label>
+        <label id="n">Others<input type="radio" name="gender" value="O" required></label></br>
+        <p>select bloodgroup:-</p>
+      <select name="bloodgroup">
+       <option>o+</option>
+	   <option>o-</option>
+	   <option>A</option>
+	   <option>AB</option>
+	  </select>
+
+      <p id="n">give valid email and strong password:-</p>
+      <label id="n">Email:<input type="email" name="email" required></label>
+      <label id="n">Password:<input type="password"  name="password" required></label>
+      <p id="n">undergo below information and submit:</p>
+      Age:<lavel id="n"><input type=text name="age" required></lavel></br>
+      <lavel id="n1">I agree with the terms and Conditions<a href="https://htmlcolorcodes.com/color-picker/">rules and regulation</a><input type="checkbox" required></lavel></br>
+
+      <input id="final" type="submit">
+      </form>
+  </div>
+
+
+</body>
+</html>

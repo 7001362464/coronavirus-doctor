@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {%load static%}
+<title>welcome</title>
+<link rel="stylesheet" href="{%static 'css/Layout.css'%}">
+</head>
+<body>
+<div id="header">
+    <h2>coronavirus your personal doctor</h2>
+
+<p>track your health</p>
+<img id="si" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT7Nd5QJdhzApS-CVTJD26Sgf1G1qxMo2WL7w&usqp=CAU">
+
+
+ </div>
+<div id="navbar">
+
+
+<a href="welcome">Logout</a>
+    <a href="dao">feedback form</a>
+
+</div>
+<div id="content">
+<div id="leftsidebar">
+<div class="sidebarbox">
+<h2 style="color:blue;">Hey {{s.name}} your last update</h2>
+<p>your chance to be affected in coronavirus:-{{s.chance}}</p>
+ <form action="give">
+<button style="background-color:orange;width:100px;height:40px" name="password" value="{{s.password}}">update your condition</button>
+
+     </form>
+</div>
+</div>
+<div id="maincontent">
+<h2 style="color:blue">Suggetion:-</h2>
+<p>{{s.sugg}}</p>
+
+
+</div>
+<div id="rightsidebar">
+<div class="sidebarbox">
+<h2 style="color:blue;">Website</h2>
+<a style="text-decoration:none;" href="">www.github.com</p>
+</div>
+<div class="sidebarbox">
+
+<a href="https://worldmeter.com">to know details update about coronavirus click here</a>
+</div>
+<!--<div class="sidebarbox">
+<h2 style="color:orange;"></h2>
+<p>AI robot which like to talk in a dark room</p>
+</div>-->
+</div>
+If you want to see my photograh frame website then visit to <a href="http://7001362464.github.io/bubu.github.io/blog.html">www,photo.com</a>
+</div>
+<div style="color:RED;" id="footer">@COPYWRITE FOLLOWED behalf of saikat mondal</div>
+</body>
+</html>
